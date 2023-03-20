@@ -1,0 +1,35 @@
+body {
+    background-color: #191919;
+}
+
+.day-level-0 {
+    background-color: #2e2e2e;
+}
+
+#contributions-chart {
+    background-color: #191919;
+    border: 2px solid #666666;
+    box-shadow: 0px 0px 0px 6px rgba(46, 46, 46, 1) inset;
+}
+
+#user-and-year h1 {
+    color: #ffffff;
+    background-color: #2e2e2e;
+}
+
+.month .month-title {
+    color: #cccccc;
+}
+
+.day .tooltip-text {
+    background-color: #e6e6e6;
+    color: #191919;
+}
+
+#additional-info {
+    background-color: #2e2e2e;
+}
+
+#additional-info div span {
+    color: #ffffff;
+}
