@@ -42,6 +42,16 @@ async def get_user(
 
     month_names = get_external_data()
     activity_days, activity_count = get_activity_days(response, r_url, r_params, n_pages, year)
+
+    if len(activity_days) == 0:
+        return templates.TemplateResponse(
+            "nodata.html",
+            {
+                "request": request,
+                "data": "<p id=\"not-found\">No data was found for this user for this period of time.</p>",
+            }
+        )
+
     streak_katas = calculate_streak(year, activity_days)
     day_levels = get_day_levels(activity_days)
 
