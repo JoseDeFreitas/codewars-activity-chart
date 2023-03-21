@@ -22,7 +22,7 @@ coding skills when you want and as you want, not to keep the chart full.
 
 ## Screenshots
 
-<a href="https://codewars-activity-chart.glitch.me/jhoffner?year=2016"><img alt="Codewars Activity Chart example" src="https://user-images.githubusercontent.com/37962411/226577099-7de8863c-9044-4b4b-941f-b2e175d09435.png" height="404"/></a>
+<a href="https://codewars-activity-chart.glitch.me/jhoffner?year=2013"><img alt="Codewars Activity Chart example" src="https://user-images.githubusercontent.com/37962411/226577099-7de8863c-9044-4b4b-941f-b2e175d09435.png" height="404"/></a>
 
 ## Usage
 
