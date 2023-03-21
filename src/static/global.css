@@ -3,6 +3,7 @@
 body {
     font-family: Verdana, sans-serif;
     margin: 0;
+    background-color: #16171b;
 }
 
 /* Unique */
@@ -17,37 +18,43 @@ body {
     visibility: hidden;
 }
 
+.day-level-0 {
+    background-color: #0f0f12;
+}
+
 .day-level-1 {
-    background-color: #bfbfff;
+    background-color: #ba9b95;
 }
 
 .day-level-2 {
-    background-color: #9999ff;
+    background-color: #ba8277;
 }
 
 .day-level-3 {
-    background-color: #7373ff;
+    background-color: #ba6959;
 }
 
 .day-level-4 {
-    background-color: #4d4dff;
+    background-color: #ba513c;
 }
 
 .day-level-5 {
-    background-color: #2626ff;
+    background-color: #ba381e;
 }
 
 .day-level-6 {
-    background-color: #0000ff;
+    background-color: #ba1f00;
 }
 
 /* Structured */
 
-#contributions-chart {
-    border-radius: 6px;
+#activity-chart {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     width: min-content;
+    background-color: #16171b;
+    border: 2px solid #0f0f12;
+    box-shadow: 0px 0px 0px 6px rgba(15, 15, 18, 1) inset;
 }
 
 #user-and-year {
@@ -60,7 +67,8 @@ body {
     margin: 0;
     padding: 5px 10px;
     font-size: 20px;
-    border-radius: 0 0 6px 6px;
+    color: #c0c9ed;
+    background-color: #0f0f12;
 }
 
 #year-container {
@@ -77,6 +85,7 @@ body {
 .month .month-title {
     margin: 4px auto;
     font-size: 14px;
+    color: #555969;
 }
 
 .month .month-container {
@@ -92,7 +101,6 @@ body {
 .week .day {
     width: 14px;
     height: 14px;
-    border-radius: 2px;
     margin: 2px;
     position: relative;
 }
@@ -105,11 +113,12 @@ body {
     margin-left: -110px;
     text-align: center;
     padding: 5px 0;
-    border-radius: 6px;
     position: absolute;
     z-index: 1;
     font-size: 11px;
     opacity: 0.9;
+    color: #bcc5e8;
+    background-color: #333333;
 }
 
 .day:hover .tooltip-text {
@@ -121,7 +130,8 @@ body {
     margin: 5px 0 0;
     padding: 8px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: #0f0f12;
 }
 
 #additional-info div {
@@ -131,10 +141,14 @@ body {
 }
 
 #additional-info svg {
-    fill: #4d4dff;
+    fill: #bb432c;
 }
 
 #additional-info span {
     margin: 5px 0 0 5px;
     font-size: 16px;
+}
+
+#additional-info div span {
+    color: #c0c9ed;
 }
