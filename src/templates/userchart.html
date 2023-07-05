@@ -5,27 +5,29 @@
         <link href="static/global.css" rel="stylesheet">
     </head>
     <body>
-        <main id="activity-chart">
-            <div id="user-and-year">
-                <h1>Katas completed by {{ username }} in {{ year }}</h1>
-            </div>
-            <div id="year-container">
-                {{ data|safe }}
-            </div>
-            <div id="additional-info">
-                <div id="total-activity">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.349 3.826" width="25" height="28.571" title="Total amount of katas completed in the year"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M1.136 0.479h1.076V0.179a0.179 0.179 0 1 1 0.359 0v0.299h0.299c0.264 0 0.479 0.214 0.479 0.479v2.391a0.479 0.479 0 0 1 -0.479 0.479H0.479A0.479 0.479 0 0 1 0 3.349v-2.391C0 0.693 0.214 0.479 0.479 0.479h0.299V0.179a0.179 0.179 0 1 1 0.359 0v0.299zM0.359 3.349c0 0.066 0.054 0.119 0.119 0.119h2.391a0.119 0.119 0 0 0 0.119 -0.119V1.435H0.359v1.914z"/></svg>
-                        <span>Total completed: {{ total }}</span>
+        <div id="container">
+            <main id="activity-chart">
+                <div id="user-and-year">
+                    <h1>Katas completed by {{ username }} in {{ year }}</h1>
+                </div>
+                <div id="year-container">
+                    {{ data|safe }}
+                </div>
+                <div id="additional-info">
+                    <div id="total-activity">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.349 3.826" width="25" height="28.571" title="Total amount of katas completed in the year"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M1.136 0.479h1.076V0.179a0.179 0.179 0 1 1 0.359 0v0.299h0.299c0.264 0 0.479 0.214 0.479 0.479v2.391a0.479 0.479 0 0 1 -0.479 0.479H0.479A0.479 0.479 0 0 1 0 3.349v-2.391C0 0.693 0.214 0.479 0.479 0.479h0.299V0.179a0.179 0.179 0 1 1 0.359 0v0.299zM0.359 3.349c0 0.066 0.054 0.119 0.119 0.119h2.391a0.119 0.119 0 0 0 0.119 -0.119V1.435H0.359v1.914z"/></svg>
+                            <span>Total completed: {{ total }}</span>
+                        </div>
+                    </div>
+                    <div id="current-streak">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28.444" width="32" height="28.444" title="Longest or current streak of katas completed"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M15.994 0c0.511 0 0.978 0.292 1.2 0.752l3.811 7.849 8.518 1.261c0.5 0.072 0.912 0.423 1.072 0.9 0.156 0.484 0.028 1.011 -0.328 1.36L24.088 18.244l1.46 8.639c0.083 0.5 -0.121 1.011 -0.538 1.305 -0.41 0.295 -1.006 0.333 -1.405 0.095l-7.61 -4.067 -7.656 4.067c-0.4 0.24 -0.944 0.2 -1.36 -0.095 -0.41 -0.295 -0.617 -0.806 -0.584 -1.305l1.505 -8.639L1.728 12.121c-0.359 -0.349 -0.487 -0.878 -0.329 -1.36 0.157 -0.477 0.572 -0.828 1.072 -0.9l8.512 -1.261 3.811 -7.849C15.022 0.292 15.482 0 15.994 0zm0 4.387L13.078 10.4c-0.195 0.394 -0.572 0.672 -1.006 0.739L5.498 12.105 10.272 16.833c0.306 0.306 0.444 0.745 0.372 1.172l-1.123 6.644 5.844 -3.122c0.394 -0.211 0.867 -0.211 1.256 0l5.844 3.122 -1.123 -6.644c-0.072 -0.428 0.072 -0.867 0.377 -1.172l4.772 -4.728 -6.573 -0.967c-0.439 -0.067 -0.816 -0.344 -1.006 -0.739L15.994 4.387z"/></svg>
+                            <span>{{ streak }}</span>
+                        </div>
                     </div>
                 </div>
-                <div id="current-streak">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28.444" width="32" height="28.444" title="Longest or current streak of katas completed"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M15.994 0c0.511 0 0.978 0.292 1.2 0.752l3.811 7.849 8.518 1.261c0.5 0.072 0.912 0.423 1.072 0.9 0.156 0.484 0.028 1.011 -0.328 1.36L24.088 18.244l1.46 8.639c0.083 0.5 -0.121 1.011 -0.538 1.305 -0.41 0.295 -1.006 0.333 -1.405 0.095l-7.61 -4.067 -7.656 4.067c-0.4 0.24 -0.944 0.2 -1.36 -0.095 -0.41 -0.295 -0.617 -0.806 -0.584 -1.305l1.505 -8.639L1.728 12.121c-0.359 -0.349 -0.487 -0.878 -0.329 -1.36 0.157 -0.477 0.572 -0.828 1.072 -0.9l8.512 -1.261 3.811 -7.849C15.022 0.292 15.482 0 15.994 0zm0 4.387L13.078 10.4c-0.195 0.394 -0.572 0.672 -1.006 0.739L5.498 12.105 10.272 16.833c0.306 0.306 0.444 0.745 0.372 1.172l-1.123 6.644 5.844 -3.122c0.394 -0.211 0.867 -0.211 1.256 0l5.844 3.122 -1.123 -6.644c-0.072 -0.428 0.072 -0.867 0.377 -1.172l4.772 -4.728 -6.573 -0.967c-0.439 -0.067 -0.816 -0.344 -1.006 -0.739L15.994 4.387z"/></svg>
-                        <span>{{ streak }}</span>
-                    </div>
-                </div>
-            </div>
-        </main>
+            </main>
+        </div>
     </body>
 </html>

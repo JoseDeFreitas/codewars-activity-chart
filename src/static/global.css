@@ -48,6 +48,14 @@ body {
 
 /* Structured */
 
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #activity-chart {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
