@@ -6,7 +6,7 @@ This is a little program that prints a chart, in the form of a calendar (based
 on the year you choose),[^1] that shows the days a specified user completed katas
 in Codewars and the quantity of the katas they completed in that day. The API also
 counts the total amount of katas completed in the year and the streak of completion.[^2]
-Head to the [Screenshots](#screenshots) section to see how it looks. **The contribution
+Head to the [Example](#example) section to see how it looks. **The contribution
 chart from GitHub was my inspiration.**
 
 Charts like this exist in some websites. Although they look cool, I don't think
