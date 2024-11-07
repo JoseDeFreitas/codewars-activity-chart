@@ -11,11 +11,9 @@ chart from GitHub was my inspiration.**
 
 Charts like this exist in some websites. Although they look cool, I don't think
 they provide anything useful, and, in some cases, I believe they're noxious as
-force you to keep contributing (even if you don't want to) or preserve a streak
+force you to keep them ordered (even if you don't want to) or preserve a streak
 that is, pretty much, useless. This may not seem like an issue, but I do believe
-it's wrong to make a change (in any website) just to keep the chart "pretty".
-It's not that of a big deal as it's up to you not to pay attention to the chart
-and stop doing useless changes, but it's still an incentive to do so.
+it's wrong to submit solutions to code challenges just to keep the chart "pretty".
 
 This program serves only as a cool statistical graph. I recommend you practise your
 coding skills when you want and as you want, not to keep the chart full.
