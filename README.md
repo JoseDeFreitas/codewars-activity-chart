@@ -2,6 +2,8 @@
 
 > Also check [CodewarsLogger](https://github.com/JoseDeFreitas/CodewarsLogger)!
 
+> (Adapted from [JoseDeFreitas/wikipedia-edits-chart](https://github.com/JoseDeFreitas/wikipedia-edits-chart)).
+
 This is a little program that prints a chart, in the form of a calendar (based
 on the year you choose),[^1] that shows the days a specified user completed katas
 in Codewars and the quantity of the katas they completed in that day. The API also
